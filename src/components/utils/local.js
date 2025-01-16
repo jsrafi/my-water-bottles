@@ -20,4 +20,12 @@ const saveToLs =(cart)=>
     localStorage.setItem( 'cart' ,stringifing)
 }
 
-export { addToLs , getStoredCart}
+const removeFromLs =(id)=>
+{
+    const cart = getStoredCart();
+    const remaining = cart.filter(idx => idx !== id) 
+    saveToLs(remaining)
+
+}
+
+export { addToLs , getStoredCart , removeFromLs}

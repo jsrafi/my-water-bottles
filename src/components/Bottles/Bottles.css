@@ -4,3 +4,27 @@
     grid-template-columns: repeat(3,1fr);
     gap: 20px;
 }
+.cart-container img
+{
+    width: 75px;
+    border: 1px solid black;
+    border-radius: 15px;
+   
+}
+.cart-container
+{
+    display: flex;
+    gap: 15px;
+    justify-content: center;
+    margin-bottom: 10px;
+}
+.new-contain
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
+    background-color: burlywood;
+    padding: 5px;
+    border-radius: 15px;
+}
